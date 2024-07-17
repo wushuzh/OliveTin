@@ -77,8 +77,8 @@ devcontainer: compile podman-image podman-container
 
 webui-codestyle:
 	cd webui.dev && npm install
-	cd webui.dev && ./node_modules/.bin/eslint main.js js/*
-	cd webui.dev && ./node_modules/.bin/stylelint style.css
+	cd webui.dev && npx eslint main.js js/*
+	cd webui.dev && npx stylelint style.css
 
 webui-dist:
 	rm -rf webui webui.dev/dist
